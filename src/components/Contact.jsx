@@ -28,22 +28,52 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Entre em contato</p>
         <h2 className={styles.sectionHeadText}>Contato.</h2>
 
+        {/* forms */}
         <form 
           ref={formRef}
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
+          {/* input name */}
           <label 
             className="flex flex-col"
           >
-            <span className="text-white font-medium mb-4">Seu Nome</span>
+            <span className="text-white font-medium mb-4">Seu nome</span>
             <input 
             type="text"
             name="name"
             value={form.name}
             onChange={handleChange}
-            placeholder="Qual o seu nome?"
+            placeholder="Qual é o seu nome?"
             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+             />
+          </label>
+          {/* input email */}
+          <label 
+            className="flex flex-col"
+          >
+            <span className="text-white font-medium mb-4">Seu e-mail</span>
+            <input 
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder="Qual é o seu e-mail?"
+            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+             />
+          </label>
+          {/* input message */}
+          <label 
+            className="flex flex-col"
+          >
+            <span className="text-white font-medium mb-4">Sua mensagem</span>
+            <textarea 
+              rows={7}
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="Deixe sua mensagem ou comentário aqui."
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
              />
           </label>
         </form>
