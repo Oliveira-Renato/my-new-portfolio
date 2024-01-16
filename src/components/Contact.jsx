@@ -7,6 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
   const formRef = useRef();
@@ -40,7 +41,13 @@ const Contact = () => {
       '1LWDpusn1DTYbgqIZ'
     ).then(() => {
       setLoading(false)
-      alert('Obrigado. Entrarei em contato assim que possível.')
+      toast.success('Obrigado. Entrarei em contato assim que possível.',
+      {
+        style: {
+            background: '#151515',
+            color: '#fff',
+        },
+      })
 
       setForm({
         name: '',
@@ -53,12 +60,21 @@ const Contact = () => {
 
       console.log(error)
 
-      alert('Algo deu errado.')
+      toast.error("Algo deu errado.", 
+      {
+        style: {
+            background: '#151515',
+            color: '#fff',
+        },
+      })
     })
   }
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+      <Toaster
+        position="bottom-center"
+      />
       {/* form motion */}
       <motion.div
         variants={slideIn('left','tween', 0.2, 1)}
@@ -79,12 +95,13 @@ const Contact = () => {
           >
             <span className="text-white font-medium mb-4">Seu nome</span>
             <input 
-            type="text"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            placeholder="Qual é o seu nome?"
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="Qual é o seu nome?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              required
              />
           </label>
           {/* input email */}
@@ -93,12 +110,13 @@ const Contact = () => {
           >
             <span className="text-white font-medium mb-4">Seu e-mail</span>
             <input 
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            placeholder="Qual é o seu e-mail?"
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="Qual é o seu e-mail?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              required
              />
           </label>
           {/* input message */}
@@ -113,6 +131,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Deixe sua mensagem ou comentário aqui."
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              required
              />
           </label>
 
