@@ -34,19 +34,19 @@
 }
 
 .violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: #ff5733;
+  background: linear-gradient(-90deg, #ff5733 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #ff5733 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
 
 .green-pink-gradient {
-  background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: "#f5af19";
+  background: linear-gradient(90.13deg, #f5af19 1.9%, #ff5733 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #f5af19 1.9%, #ff5733 97.5%);
 }
 
 .orange-text-gradient {
@@ -201,4 +201,33 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+.hexagon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hexagon-container::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 10%;
+  width: 80%;
+  height: 180%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: #050505;
+  z-index: 2;
+}
+
+.hexagon-container::after {
+  content: "";
+  position: absolute;
+  top: -37%;
+  left: 6.5%;
+  width: 86%;
+  height: 186%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
