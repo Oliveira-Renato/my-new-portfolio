@@ -214,7 +214,7 @@
   top: -40%;
   left: 10%;
   width: 80%;
-  height: 180%;
+  height: 160%;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background-color: #050505;
   z-index: 2;
@@ -226,7 +226,7 @@
   top: -37%;
   left: 6.5%;
   width: 86%;
-  height: 186%;
+  height: 170%;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
