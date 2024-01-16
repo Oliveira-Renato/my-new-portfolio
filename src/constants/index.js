@@ -122,8 +122,8 @@ const testimonials = [
   {
     testimonial:
       "Um dos legados que o Renato deixou para a empresa foi a reformulação do site da empresa, onde ele buscou tecnologias de alto nível para entregar o site com maestria.",
-    name: "Chris Brown",
-    designation: "Richard",
+    name: "Richard",
+    designation: "Programador",
     company: "Kennen Consultoria",
     image: "https://randomuser.me/api/portraits/men/2.jpg",
   },
