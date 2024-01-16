@@ -19,43 +19,39 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  letmeask,
+  rateio,
+  bessacare,
   threejs,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "Sobre",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experiência",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contato",
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Desenvolvedor Web",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
+    title: "Desenvolvedor Frontend",
     icon: creator,
+  },
+  {
+    title: "Desenvolvedor Backend",
+    icon: backend,
   },
 ];
 
@@ -81,10 +77,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -97,74 +89,23 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Desenvolvedor Web",
+    company_name: "Kennen Consultoria",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Junho 2021 - Julho 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desenvolver e manter aplicações web utilizando Javascript, React e outras tecnologias relacionadas.",
+      "Colaborar com equipes multifuncionais, incluindo designers, gerentes de produtos e outros desenvolvedores, para criar produtos de alta qualidade.",
+      "Implementar design responsivo  e garantir compatibilidade entre navegadores.",
+      "Participar de revisões de código fornecendo feedback construtivo para outros desenvolvedores.",
     ],
   },
 ];
@@ -172,63 +113,76 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Profissional dedicado e orientado a entregas fazendo a diferença em um time de desenvolvimento. Trabalhar com Renato foi uma ótima experiência.",
+    name: "Everton",
+    designation: "Desenvolvedor Frontend",
+    company: "Kennen",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "Um dos legados que o Renato deixou para a empresa foi a reformulação do site da empresa, onde ele buscou tecnologias de alto nível para entregar o site com maestria.",
     name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    designation: "Richard",
+    company: "Kennen Consultoria",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Let me Ask",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Letmeask é um site desenvolvido com o intuito de permitir a criação de salas de Perguntas & Resposta de maneira simples e organizada.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: letmeask,
+    source_code_link: "https://github.com/Oliveira-Renato/LetmeAsk",
   },
   {
-    name: "Job IT",
+    name: "Rateio App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Rateio é uma aplicação de compartilhamento de despesas desenvolvida como parte do meu primeiro MBA em Desenvolvimento Full Stack.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: rateio,
+    source_code_link: "https://github.com/Oliveira-Renato/Rateio",
+  },
+  {
+    name: "WebSimples",
+    description:
+      "Este projeto é uma demonstração de uma inspiração de design de site visualmente atraente e responsivo, habilmente elaborado utilizando tecnologias modernas.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "javaScript",
         color: "green-text-gradient",
       },
       {
@@ -236,29 +190,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: bessacare,
+    source_code_link: "https://github.com/Oliveira-Renato/website-example",
   },
 ];
 

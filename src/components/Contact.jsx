@@ -62,7 +62,7 @@ const Contact = () => {
       {/* form motion */}
       <motion.div
         variants={slideIn('left','tween', 0.2, 1)}
-        className="flex-[0.75px] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Entre em contato</p>
         <h2 className={styles.sectionHeadText}>Contato.</h2>
@@ -127,8 +127,8 @@ const Contact = () => {
 
       {/* globe motion */}
       <motion.div
-        variants={slideIn('right','tween', 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         <EarthCanvas />
       </motion.div>
