@@ -20,15 +20,20 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import vue from "./tech/vue.png";
+import laravel from "./tech/laravel.png";
+import pgsql from "./tech/pgsql.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import building from "./company/building.png";
 
 import letmeask from "./letmeask.png";
 import rateio from "./rateio.png";
 import bessacare from "./bessacare.png";
+import model from "./model-portfolio.png";
 
 export {
   logo,
@@ -59,4 +64,9 @@ export {
   bessacare,
   rateio,
   letmeask,
+  building,
+  model,
+  vue,
+  pgsql,
+  laravel
 };

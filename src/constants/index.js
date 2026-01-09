@@ -11,15 +11,18 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
+  pgsql,
+  vue,
+  laravel,
   git,
   figma,
   docker,
   meta,
-  starbucks,
+  building,
   tesla,
   shopify,
   letmeask,
+  model,
   rateio,
   bessacare,
   threejs,
@@ -42,31 +45,31 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Desenvolvedor Web",
+    title: "Desenvolvedor Full Stack",
     icon: web,
   },
   {
-    title: "Desenvolvedor Frontend",
+    title: "Desenvolvedor Front End",
     icon: creator,
   },
   {
-    title: "Desenvolvedor Backend",
+    title: "Desenvolvedor Back End",
     icon: backend,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "Vuejs",
+    icon: vue,
+  },
+    {
+    name: "Laravel",
+    icon: laravel,
   },
   {
     name: "TypeScript",
@@ -75,6 +78,14 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
+  },
+    {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "Tailwind CSS",
@@ -85,8 +96,8 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "PostgreSql",
+    icon: pgsql,
   },
   {
     name: "git",
@@ -96,9 +107,34 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Desenvolvedor Web",
+    title: "Desenvolvedor Full Stack",
+    company_name: "Bossa Nova Sotheby's International Realty",
+    icon: building,
+    iconBg: "#383E56",
+    date: "Outubro 2024 - Atualmente",
+    points: [
+      "Atuação na manutenção de sistemas legados e no desenvolvimento de uma nova plataforma web moderna, baseada no projeto Cidade Virtual.",
+      "Trabalho com Vue.js, Laravel, PostgreSQL, JavaScript e TypeScript, contribuindo para a definição de arquitetura, desenvolvimento de novas funcionalidades e melhorias contínuas no site.",
+      "Responsável por garantir a estabilidade do sistema em produção, permitindo uma transição gradual para soluções mais modernas sem impacto nas operações existentes.",
+      "Atuação em fluxo Kanban,com gestão de demandas contínuas via Notion.",
+    ],
+  },
+  {
+    title: "Desenvolvedor Full Stack",
+    company_name: "Skin & Body Saúde",
+    icon: building,
+    iconBg: "#383E56",
+    date: "Março 2024 - Outubro 2024",
+    points: [
+      "Atuação no desenvolvimento e manutenção de soluções de e-commerce com foco em desempenho, escalabilidade e experiência do usuário em ambientes desktop e mobile.",
+      "Trabalho principalmente com a plataforma Shopify, implementando funcionalidades customizadas e melhorias contínuas.",
+      "Desenvolvimento de APIs REST utilizando Node.js, JavaScript e TypeScript, garantindo integrações estáveis, lógica de negócio consistente e fluxo eficiente de dados entre sistemas e serviços de terceiros.",
+    ],
+  },
+  {
+    title: "Desenvolvedor Front End",
     company_name: "Kennen Consultoria",
-    icon: starbucks,
+    icon: building,
     iconBg: "#383E56",
     date: "Junho 2021 - Julho 2023",
     points: [
@@ -130,6 +166,27 @@ const testimonials = [
 ];
 
 const projects = [
+   {
+    name: "Portfólio de Modelo",
+    description:
+      "Um portfólio profissional desenvolvido para uma modelo, com foco em UI moderna, responsividade e experiência visual, inspirado nos layouts atuais de redes sociais como o Instagram.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mux",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: model,
+    source_code_link: "https://github.com/Oliveira-Renato/mary-mendes",
+  },
   {
     name: "Let me Ask",
     description:

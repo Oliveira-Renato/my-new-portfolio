@@ -44,8 +44,19 @@ const About = () => {
       variants={fadeIn('','', 0.1, 1)}
       className='mt-4 text-secondary text-[17px] max-x-3xl leading-[30px]'
       >
-        Olá! Meu nome é Renato Oliveira, sou graduado em Análise e Desenvolvimento de Sistemas e possuo um MBA em Desenvolvimento Full Stack. Tenho experiência em JavaScript e conhecimento em bibliotecas e frameworks, como React, Next.js e Node.js.
-        Demonstro grande entusiasmo pela tecnologia, sou uma pessoa dedicada e criativa. Estou sempre ansioso para aprimorar minhas habilidades, com o objetivo de contribuir para projetos inovadores. 
+        Olá! Meu nome é Renato Oliveira, sou Desenvolvedor Full Stack, formado em Análise e Desenvolvimento de Sistemas e com MBA concluído em Desenvolvimento Full Stack.
+      </motion.p>
+       <motion.p
+      variants={fadeIn('','', 0.1, 1)}
+      className='mt-4 text-secondary text-[17px] max-x-3xl leading-[30px]'
+      >
+        Tenho experiência com JavaScript e frameworks como React, Vue.js, Node.js e Laravel, além de bancos de dados relacionais como PostgreSQL e MySQL. Busco sempre escrever código limpo, escalável e de fácil manutenção.
+      </motion.p>
+      <motion.p
+      variants={fadeIn('','', 0.1, 1)}
+      className='mt-4 text-secondary text-[17px] max-x-3xl leading-[30px]'
+      >
+        Sou focado em evolução técnica contínua e gosto de atuar em projetos desafiadores, contribuindo com soluções bem estruturadas em ambientes profissionais.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
