@@ -25,10 +25,12 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import building from "./company/building.png";
 
 import letmeask from "./letmeask.png";
 import rateio from "./rateio.png";
 import bessacare from "./bessacare.png";
+import model from "./model-portfolio.png";
 
 export {
   logo,
@@ -59,4 +61,6 @@ export {
   bessacare,
   rateio,
   letmeask,
+  building,
+  model
 };

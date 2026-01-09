@@ -22,7 +22,8 @@ const Hero = () => {
             </div>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Um desenvolvedor Front-End <br className='sm:block hidden' />apaixonado por criar aplicações web.
+            Um Desenvolvedor Full Stack <br className='sm:block hidden' />construindo soluções web modernas
+  e escaláveis.
           </p>
         </div>
       </div>
