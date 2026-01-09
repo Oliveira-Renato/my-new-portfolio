@@ -20,6 +20,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import vue from "./tech/vue.png";
+import laravel from "./tech/laravel.png";
+import pgsql from "./tech/pgsql.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -62,5 +65,8 @@ export {
   rateio,
   letmeask,
   building,
-  model
+  model,
+  vue,
+  pgsql,
+  laravel
 };

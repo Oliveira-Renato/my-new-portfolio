@@ -11,7 +11,9 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
+  pgsql,
+  vue,
+  laravel,
   git,
   figma,
   docker,
@@ -58,16 +60,16 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "Vuejs",
+    icon: vue,
+  },
+    {
+    name: "Laravel",
+    icon: laravel,
   },
   {
     name: "TypeScript",
@@ -76,6 +78,14 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
+  },
+    {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "Tailwind CSS",
@@ -86,8 +96,8 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "PostgreSql",
+    icon: pgsql,
   },
   {
     name: "git",
